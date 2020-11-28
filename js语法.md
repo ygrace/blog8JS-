@@ -51,7 +51,26 @@ for(语句1；表达式2；语句3) {
 2. 然后判断表达式2
 3. 如果为真，执行循环体，执行语句3
 4. 如果为假，直接退出循环，执行下面的语句
-     
-  
+变态情况：
+~~~javascript
+for(var i = 0; i < 5; i++>) {
+    setTimeout(()=>{
+        console.log(i)
+    }, 0)
+}  
+~~~
+结果为五列5
+如果把var换成let将会打印出0，1，2，3，4
+## break和continue
+break 只是跳出离他最近的循环
+continue又叫next
+## label
+用得很少，但是面试经常有
+~~~javascript
+{
+    foo:1
+}
+~~~
+foo是个标签，输出值为1 
 
      
